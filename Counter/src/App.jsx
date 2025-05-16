@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -37,6 +35,7 @@ function App() {
       <br />
       <br />
       <button onClick={decrement}>Reduce Count</button>
+      <p>Current value of count : {count}</p>
     </>
   )
 }
