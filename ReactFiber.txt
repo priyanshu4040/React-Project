@@ -1,0 +1,70 @@
+✅ What is React Fiber?
+React Fiber is the new rendering engine introduced in React 16. It is a complete reimplementation of the React core algorithm, designed to make React faster and more flexible.
+
+
+
+✅ Why React Fiber?
+Before Fiber, React used a synchronous rendering process called the Stack Reconciler.
+
+In this old approach, React processed updates in one go, blocking the main thread until the entire update was complete.
+
+This caused issues like laggy UI and unresponsive apps, especially for complex components.
+
+React Fiber solves this problem by introducing:
+
+Incremental Rendering: Breaks rendering work into smaller units called fibers, allowing React to pause and resume work.
+
+Priority-Based Updates: Assigns priority levels to different tasks, so React can handle urgent updates first (e.g., user input) and defer less important updates (e.g., background data fetching).
+
+Concurrency: Allows React to work on multiple tasks simultaneously, improving responsiveness.
+
+
+
+✅ How Does React Fiber Work?
+React Fiber splits the rendering process into two phases:
+
+Reconciliation Phase (Render Phase):
+
+React analyzes what needs to be updated and builds a virtual representation of the UI.
+
+This phase is interruptible, meaning React can pause and resume it, allowing higher-priority tasks to run first.
+
+Commit Phase:
+
+React updates the DOM with the changes determined in the previous phase.
+
+This phase is synchronous (executes all changes at once).
+
+
+
+✅ Example in Real Life:
+Imagine you are watching a movie and a friend sends you a text.
+
+In the old React, you would pause the movie, respond to the text, then resume the movie.
+
+In React Fiber, you can respond to the text without pausing the movie, keeping both tasks running smoothly.
+
+
+
+✅ Benefits of React Fiber:
+
+Smooth User Experience:
+
+Updates are broken into small chunks, preventing the UI from freezing.
+
+Priority Management:
+
+Urgent updates (e.g., user clicks) are processed before less important ones (e.g., background data fetching).
+
+Error Handling:
+
+Fiber introduces better error boundaries, allowing React to recover from errors without crashing the entire app.
+
+
+
+✅ Summary:
+React Fiber is a complete rewrite of React’s rendering engine, designed for better performance and responsiveness.
+
+It allows React to pause, resume, and prioritize rendering tasks, making apps faster and smoother.
+
+Want a visual diagram to understand how Fiber splits rendering into chunks? 👍🙂
