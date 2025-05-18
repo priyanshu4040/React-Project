@@ -9,7 +9,8 @@ function App() {
     if (count < 20) {
       count = count + 1;
       console.log("value of count", count)
-      setCount(count);
+      setCount(count + 5);
+
     }
     else {
       console.log("Count value cannot be above 20")
