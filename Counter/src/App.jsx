@@ -36,7 +36,7 @@ function App() {
       <br />
       <br />
       <button onClick={decrement}>Reduce Count</button>
-      <p>Current value of count : {count}</p>
+      <p>Current value of count is : {count}</p>
     </>
   )
 }
