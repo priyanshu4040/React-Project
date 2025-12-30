@@ -5,6 +5,7 @@ import { removeTodo } from '../features/todo/todoSlice'
 function Todos() {
 
   //Through use selector we got access to state inside it
+  // Gets state data from the store.
   const todos = useSelector(state => state.todos)
 
   //Use to remove the todo
